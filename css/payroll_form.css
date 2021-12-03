@@ -99,3 +99,22 @@ lable {
     border-radius: 4px;
     resize: vertical;
 }
+
+/* UC 3 */
+.profile-ratio-content > label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* .profile-ratio-content > label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} */
+
+.profile {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 12px;
+}
