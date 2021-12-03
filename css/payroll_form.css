@@ -76,11 +76,11 @@ body {
     border: 0px solid green;
 }
 
-.lable {
+.label {
     min-width: 140px;
 }
 
-lable {
+label {
     padding: 12px 12px 12px 0;
     display: inline-block;
 }
@@ -101,17 +101,16 @@ lable {
 }
 
 /* UC 3 */
-.profile-ratio-content > label {
+.profile-radio-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-radio-content > label {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-
-/* .profile-ratio-content > label {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-} */
 
 .profile {
     width: 40px;
