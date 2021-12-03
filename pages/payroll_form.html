@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/payroll_form.css">
   <title>Employee payroll from</title>
+  <script defer src="../js/EmployeePayroll.js"></script>
   <script defer src="../js/payroll_form.js"></script>
 </head>
 
@@ -29,6 +30,7 @@
       <div class="row-content">
         <label class="label text" for="name">Name</label>
         <input class="input" type="text" id="name" name="name" placeholder="Your name.." required>
+        <error-output class="text-error" for="text"></error-output>
       </div>
       <!--UC 3-->
       <div class="row-content">
@@ -79,7 +81,7 @@
       </div>
       <div class="row-content">
         <label class="label text" for="salary">Choose your salary: </label>
-        <input class="input" type="range" id="salary" name="salary" min="300000" max="400000" step="100" value="400000">
+        <input class="input" type="range" id="salary" name="salary" min="300000" max="500000" step="100" value="400000">
         <output class="salary-output text" for="salary" id="salary-output">400000</output>
       </div>
       <!--UC 5-->
@@ -172,14 +174,6 @@
       </div>
     </form>
   </div>
-  <script>
-    const salary = document.querySelector("#salary");
-    const output = document.querySelector("#salary-output");
-    output.textContent = salary.value;
-    salary.addEventListener('input', function () {
-      output.textContent = salary.value;
-    });
-  </script>
 </body>
 
 </html>
