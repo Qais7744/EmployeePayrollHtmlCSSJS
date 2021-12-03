@@ -156,19 +156,28 @@ select {
 .submitButton {
     border: none;
     background-color: #f5f5f5;
-    margin-right: 30px;
+    margin-right:30px;
+    color: #42515F;
 }
 
 .cancelButton {
-    /* margin-left: 140px; */
     text-decoration: none;
+    background-color: #f5f5f5;
     text-align: center;
+    color: #42515F;
+}
+
+.resetButton{
+    background-color: #f5f5f5;
+    margin-right:30px;
+    color: #42515F;
 }
 
 
 
 @media only screen and (max-width: 960px) {
     .cancelButton {
+
         margin-left: 0px;
      }
 
@@ -180,6 +189,7 @@ select {
 
 @media only screen and (max-width: 600px) {
     .form {
+
         margin-top: 10px;
     }
 
