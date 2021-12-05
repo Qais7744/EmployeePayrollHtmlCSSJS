@@ -157,7 +157,7 @@ select {
     border: none;
     background-color: #f5f5f5;
     margin-right:30px;
-    color: #42515F;
+    color: #42515F; 
 }
 
 .cancelButton {
@@ -182,8 +182,7 @@ error-output {
 
 @media only screen and (max-width: 960px) {
     .cancelButton {
-
-        margin-left: 0px;
+         margin-left: 0px;
      }
 
      .form {
