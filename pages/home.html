@@ -24,15 +24,43 @@
     </div>
   </header>
   <div class="main-content">
-  <!-- UC 2-->
+    <!-- UC 2-->
     <div class="header-content">
-        <div class="emp-detail-text">
-            Employee Details <div class="emp-count">10</div>
-        </div>
-        <a href="../pages/payroll_form.html" class="add-button">
-            <img src="../assests/icons/add-24px.png" alt="">Add User</a>
+      <div class="emp-detail-text">
+        Employee Details <div class="emp-count">10</div>
+      </div>
+      <a href="../pages/payroll_form.html" class="add-button">
+        <img src="../assests/icons/add-24px.png" alt="">Add User</a>
     </div> <!-- header content -->
-</div>
+    <div class="table-main">
+      <table id="table-display" class="table">
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Department</th>
+          <th>Salary</th>
+          <th>Start Date</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td><img class="profile" alt="" src="../assests/profile-images/Ellipse -3.png" </td>
+          <td>Altamash Bagwan</td>
+          <td>Male</td>
+          <td>
+            <div class="dept-label">HR</div>
+            <div class="dept-label">Engineer</div>
+          </td>
+          <td>500000</td>
+          <td>1 Nov 2090</td>
+          <td>
+            <img id="1" onclick="remove(this)" alt="delete" src="../assests/icons/delete-black-18dp.svg">
+            <img id="1" alt="edit" onclick="update(this)" src="../assests/icons/create-black-18dp.svg">
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
 </body>
 
 </html>
