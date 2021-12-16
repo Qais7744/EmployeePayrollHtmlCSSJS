@@ -8,8 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/payroll_form.css">
   <title>Employee payroll from</title>
-  <script defer src="../js/EmployeePayroll.js"></script>
-  <script defer src="../js/payroll_form.js"></script>
 </head>
 
 <body>
@@ -67,15 +65,15 @@
       <div class="row-content">
         <label class="label text" for="department">Department</label>
         <div>
-          <input class="checkbox" type="checkbox" id="hr" name="hr" value="HR">
+          <input class="checkbox" type="checkbox" id="hr" name="department" value="hr">
           <label class="text" for="hr">HR</label>
-          <input class="checkbox" type="checkbox" id="sales" name="sales" value="sales">
+          <input class="checkbox" type="checkbox" id="sales" name="department" value="sales">
           <label class="text" for="sales">Sales</label>
-          <input class="checkbox" type="checkbox" id="finance" name="finance" value="finance">
+          <input class="checkbox" type="checkbox" id="finance" name="department" value="finance">
           <label class="text" for="finance">Finance</label>
-          <input class="checkbox" type="checkbox" id="Engineer" name="Engineer" value="Engineer">
+          <input class="checkbox" type="checkbox" id="Engineer" name="department" value="Engineer">
           <label class="text" for="Engineer">Engineer</label>
-          <input class="checkbox" type="checkbox" id="Others" name="Others" value="Others">
+          <input class="checkbox" type="checkbox" id="Others" name="department" value="Others">
           <label class="text" for="Others">Others</label>
         </div>
       </div>
@@ -88,7 +86,7 @@
       <div class="row-content">
         <label class="label text" for="startDate">Start Date</label>
         <div>
-          <select id="day" name="Day">
+          <select id="day" name="day">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -121,7 +119,7 @@
             <option value="30">30</option>
             <option value="31">31</option>
           </select>
-          <select id="month" name="Month">
+          <select id="month" name="month">
             <option value="Jan">January</option>
             <option value="Feb">Febuary</option>
             <option value="March">March</option>
@@ -161,8 +159,8 @@
       </div>
       <!--UC 6-->
       <div class="row-content">
-        <label class="label text" for="notes">Notes</label>
-        <textarea id="notes" class="input" name="Notes" placeholder="Describe yourself here..."
+        <label class="label text" for="note">Notes</label>
+        <textarea id="note" class="input" name="note" placeholder="Describe yourself here..."
           style="height:100px"></textarea>
       </div>
       <div class="buttonParent">
@@ -174,6 +172,8 @@
       </div>
     </form>
   </div>
+  <script src="../js/EmployeePayroll.js"></script>
+  <script src="../js/payroll_form.js"></script>
 </body>
 
 </html>
