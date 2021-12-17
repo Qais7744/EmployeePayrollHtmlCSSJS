@@ -28,19 +28,21 @@ const save = () => {
     let employeePayrollData = createEmployeePayroll();
     createAndUpdateStorage(employeePayrollData);
   } catch (e) {
+    // console.log(e);
     return;
   }
 }
 
 function createAndUpdateStorage(employeePayrollData) {
-
   let employeePayrollList = JSON.parse(localStorage.getItem("EmployeePayrollList"));
 
   if (employeePayrollList != undefined) {
+    console.log(employeePayrollData);
     employeePayrollList.push(employeePayrollData);
   } else {
     employeePayrollList = [employeePayrollData];
   }
+  console.log(employeePayrollList.toString());
   alert(employeePayrollList.toString());
   localStorage.setItem("EmployeePayrollList", JSON.stringify(employeePayrollList));
 }
@@ -51,7 +53,7 @@ const resetForm = () => {
   unsetSelectedValues('[name=gender]');
   unsetSelectedValues('[name=department]');
   setValue('#salary', '');
-  setValue('#notes', '');
+  setValue('#note', '');
   setValue('#day', '1');
   setValue('#month', 'January');
   setValue('#year', '2020');
